@@ -35,7 +35,7 @@ Computer Engineering professional and Technical Lead at the **Ministerio de Educ
 ## 2. Core Technical Competencies
 
 ### Cloud Platforms & Infrastructure
-* **Amazon Web Services (AWS)**: EC2, S3, VPC Networking, RDS, IAM
+* **Amazon Web Services (AWS)**: EC2, ECS (Fargate), S3, VPC Networking, RDS, IAM
 * **Oracle Cloud Infrastructure (OCI)**: Virtual Cloud Networks (VCN), Compute, Security Lists, Subnet Routing, High Availability Quorum Design
 * **Google Cloud Platform (GCP)**: Cloud Run (Serverless Containers), Compute Engine, Cloud Storage
 * **Microsoft Azure**: Virtual Machines, Virtual Networks (VNets)
@@ -59,23 +59,25 @@ The following repositories represent core engineering competencies across cloud 
 
 ---
 
-### 3.1. [oci-mongodb-ha-cluster](https://github.com/alessg1414/oci-mongodb-ha-cluster)
+### 3.1. [weather-api-containerized-serverless](https://github.com/alessg1414/weather-api-containerized-serverless)
+
+> **Serverless Web API, AWS ECS Fargate & CI/CD Pipeline**  
+> **Tech Stack:** ASP.NET Core 8 | Docker | AWS ECS (Fargate) | AWS ECR | GitHub Actions | Entity Framework Core 9 | JWT | OpenWeatherMap API
+
+A containerized RESTful Web API engineered for real-time weather data processing, usage auditing, and serverless cloud execution on AWS.
+* **Container Optimization:** Built using a multi-stage `Dockerfile` that segregates the SDK build environment from a lightweight, hardened ASP.NET runtime footprint to minimize image size and deployment latency.
+* **AWS ECS Fargate Architecture:** Designed for serverless container execution with custom task definitions, IAM execution roles, and secure container registry hosting via **AWS ECR**.
+* **Automated CI/CD Pipeline:** Integrated **GitHub Actions** workflows to automatically build, package, and deploy container updates to ECS Fargate with zero-downtime execution upon every repository push.
+
+---
+
+### 3.2. [oci-mongodb-ha-cluster](https://github.com/alessg1414/oci-mongodb-ha-cluster)
 > **Cloud High Availability & Disaster Recovery Architecture (OCI)**  
 > **Tech Stack**: Oracle Cloud Infrastructure | MongoDB 7.0 | Ubuntu Server | Bash | Cisco Packet Tracer
 
 An active-passive High Availability database cluster hosted on OCI featuring zero data loss (RPO = 0) and sub-minute automated failover.
 * **Core Architecture**: Provisioned a multi-fault domain VCN with regional private subnets, implementing customized 2-VM quorum voting logic via a double-vote Arbiter process.
 * **Enterprise Baseline**: Designed a supporting Tier III multi-site network topology in Cisco Packet Tracer featuring BGP Multihoming, OSPF full-mesh routing, and LACP EtherChannels.
-
----
-
-### 3.2. [weather-api-containerized-cloudrun](https://github.com/alessg1414/weather-api-containerized-cloudrun)
-> **Serverless Web API & Containerization Pipeline**  
-> **Tech Stack**: ASP.NET Core 8 | Docker | Entity Framework Core 9 | JWT | OpenWeatherMap API
-
-A containerized RESTful Web API engineered for real-time weather data processing, usage auditing, and cloud execution.
-* **Container Optimization**: Built using a multi-stage `Dockerfile` that segregates the SDK build environment from a lightweight, hardened ASP.NET runtime footprint.
-* **Cloud Run Preparedness**: Designed for serverless auto-scaling with environment-injected secret management and port-binding compliance.
 
 ---
 
