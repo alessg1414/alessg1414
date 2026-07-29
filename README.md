@@ -35,10 +35,10 @@ Computer Engineering professional and Technical Lead at the **Ministerio de Educ
 ## 2. Core Technical Competencies
 
 ### Cloud Platforms & Infrastructure
-* **Amazon Web Services (AWS)**: EC2, S3, VPC Networking, RDS, IAM, Auto Scaling, Elastic Load Balancing (ELB)
+* **Amazon Web Services (AWS)**: EC2, S3, VPC Networking, RDS, IAM
 * **Oracle Cloud Infrastructure (OCI)**: Virtual Cloud Networks (VCN), Compute, Security Lists, Subnet Routing, High Availability Quorum Design
 * **Google Cloud Platform (GCP)**: Cloud Run (Serverless Containers), Compute Engine, Cloud Storage
-* **Microsoft Azure**: Virtual Machines, Virtual Networks (VNets), Storage Accounts, Entra ID
+* **Microsoft Azure**: Virtual Machines, Virtual Networks (VNets)
 
 ### DevOps, Containerization & Systems
 * **Containerization**: Docker Engine, Multi-stage builds, Container Registries, Image Footprint Optimization
